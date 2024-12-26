@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">หน้าหลัก</a>
+                        <a class="nav-link" href="index.html">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">สถานที่ท่องเที่ยว</a>
@@ -39,3 +39,25 @@
             </div>
         </div>
     </nav>
+    <div class="container my-5">
+        <h2 class="text-center mb-4 bg-dark p-4 rounded shadow text-white">ติดต่อเรา</h2>
+        <form action="/submit" method="POST" class="bg-dark p-4 rounded shadow text-white">
+            <div class="mb-3">
+                <label for="fullname" class="form-label">ชื่อ-นามสกุล *</label>
+                <input type="text" class="form-control" id="fullname" name="fullname" required placeholder="กรุณากรอกชื่อและนามสกุล">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">อีเมล *</label>
+                <input type="email" class="form-control" id="email" name="email" required placeholder="example@domain.com">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                <input type="tel" class="form-control" id="tel" name="tel" pattern="[0-9]{10}" placeholder="กรอกหมายเลข 10 หลัก">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">ข้อความ *</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required placeholder="กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-light w-100">ส่งข้อความ</button>
+        </form>
+    </div>
